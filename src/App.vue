@@ -1,16 +1,21 @@
 <template>
   <div id="app">
     <AppNav></AppNav>
+    <AppMovies></AppMovies>
+    <AppFooter></AppFooter>
   </div>
 </template>
 
 <script>
-import AppNav from './components/AppNav.vue'
-
+import AppNav from "./components/layouts/AppNav.vue";
+import AppFooter from "./components/layouts/AppFooter.vue";
+import AppMovies from "./components/Movies/AppMovies.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    AppNav
-  }
-}
+    AppNav,
+    AppFooter,
+    AppMovies,
+  },
+};
 </script>
